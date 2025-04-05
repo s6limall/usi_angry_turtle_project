@@ -1,0 +1,22 @@
+[workspace]
+authors = ["kurma99 <43851079+kurma99@users.noreply.github.com>"]
+channels = ["robostack-staging", "conda-forge"]
+name = "usi_angry_turtle_project"
+platforms = ["osx-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+ros-humble-desktop = ">=0.10.0,<0.11"
+python = ">=3.10.13,<3.11"
+colcon-common-extensions = ">=0.3.0,<0.4"
+ros-humble-rclpy = ">=3.3.7,<4"
+setuptools = ">=61.0.0,<62"
+black = ">=25.1.0,<26"
+
+[activation.env]
+ROS_LOCALHOST_ONLY="1"
+
+[activation]
+scripts = ["install/setup.sh"]
